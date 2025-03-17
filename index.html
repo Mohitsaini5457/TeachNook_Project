@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Historical India</div>
+            <ul class="nav-links">
+                <li><a href="#taj-mahal">Home</a></li>
+                <li><a href="#qutub-minar">About</a></li>
+                <li><a href="#red-fort">Visit</a></li>
+                <li><a href="#hampi">Contact us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <h1>Historical Places in India</h1>
+    </header>
+
+    <main>
+        <section class="place" id="taj-mahal">
+            <img src="images/taj mahal.jpeg" alt="Taj Mahal">
+            <div class="info">
+                <h2>Taj Mahal</h2>
+                <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife, Mumtaz Mahal.</p>
+            </div>
+        </section>
+
+        <section class="place" id="qutub-minar">
+            <img src="images/qutub minar.jpg" alt="Qutub Minar">
+            <div class="info">
+                <h2>Qutub Minar</h2>
+                <p>Qutub Minar is a 73-meter tall minaret located in Delhi. It is a UNESCO World Heritage Site and is made of red sandstone and marble. It was built in 1193 by Qutab-ud-din Aibak, the founder of the Delhi Sultanate.</p>
+            </div>
+        </section>
+
+        <section class="place" id="red-fort">
+            <img src="images/red fort.webp" alt="Red Fort">
+            <div class="info">
+                <h2>Red Fort</h2>
+                <p>The Red Fort is a historic fort in Delhi. It was the main residence of the emperors of the Mughal dynasty for nearly 200 years. It was constructed in 1639 by the fifth Mughal Emperor Shah Jahan.</p>
+            </div>
+        </section>
+
+        <section class="place" id="hampi">
+            <img src="images/hampi.jpg" alt="Hampi">
+            <div class="info">
+                <h2>Hampi</h2>
+                <p>Hampi is a UNESCO World Heritage Site located in Karnataka. It was the capital of the Vijayanagara Empire in the 14th century. The ruins of Hampi are spread over a large area and include temples, palaces, and other structures.</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Historical Places in India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
